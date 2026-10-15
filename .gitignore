@@ -1,0 +1,22 @@
+
+# Java e Maven
+**/target/
+**/.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ
+.idea/
+**/.idea/
+*.iml
+
+# Configuracoes locais e credenciais
+**/application.properties
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
