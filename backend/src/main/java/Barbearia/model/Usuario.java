@@ -3,17 +3,17 @@ package Barbearia.model;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "usuario")
+@Entity // Define que esta classe é uma entidade JPA (mapeada para o banco)
+@Table(name = "usuario") // Especifica o nome da tabela no banco
 
 
 public class Usuario {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id //Define que este campo é a chave primária da tabela
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //Define o auto-incremento do ID
     private Long id;
 
-    @Column(nullable = false, length = 100)
+    @Column(nullable = false, length = 100) //Configura a coluna correspondente
     private String nome;
 
     @Column(nullable = false, length = 100, unique = true)
@@ -65,8 +65,8 @@ public class Usuario {
     public LocalDateTime getAtualizadoEm() {
         return atualizadoEm;
     }
-    //Setters
 
+    //Setters
     public void setNome(String nome) {
         this.nome = nome;
     }
